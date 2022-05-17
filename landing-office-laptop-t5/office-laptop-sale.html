@@ -26,10 +26,15 @@
             scroll-behavior: smooth;
         }
         body{
-            /* background-image: linear-gradient(#ebeef3, #ebeef3); */
-            background-image: url(img/background.jpg);
-            background-size: 100% 100%;
+            background: linear-gradient(#eef1f6, #dde0e9);
+            
             min-width: unset;
+        }
+        .c-content{
+            background-image: url(img/background.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 91% 100%;
         }
         img{
             width:  100%;
@@ -103,7 +108,8 @@
         }
 
         .line{
-            border-bottom: #bfc1c0 solid 3px ;
+            border-bottom: #bfc1c0 solid 2px;
+            margin: 0 7%;
         }
 
         .title img{
@@ -121,6 +127,14 @@
         #contact{
             width: 40%;
             margin-left: 30%;
+        }
+
+        #description{
+            width: 1400px;
+            margin: auto;
+            color: #000;
+            padding: 15px 90px;
+            border-top: 1px solid #ccc;
         }
         @media only screen and (max-width:768px){
             .laptop{
@@ -165,6 +179,10 @@
                 width: 61%;
                 margin-left: 19%;
             }
+
+            #description{
+            padding: 15px 30px;
+        }
         }	
 
     </style>
@@ -276,34 +294,34 @@ src="https://www.facebook.com/tr?id=1087712025416221&ev=PageView&noscript=1"
     <div class="c-banner">
         <a href="https://nguyencongpc.vn/" title="Máy Tính Nguyễn Công"><img src="img/banner.jpg" alt="Banner"></a>
     </div>
-    <div class="link" style="padding-bottom: 1%;">
-        <a href="#asus">
-            <img src="img/link-asus.png" alt="">
-        </a>
-        <a href="#msi">
-            <img src="img/link-msi.png" alt="">
-        </a>
-        <a href="#dell">
-            <img src="img/link-dell.png" alt="">
-        </a>
-        <a href="#hp">
-            <img src="img/link-hp.png" alt="">
-        </a>
-        <a href="#lenovo">
-            <img src="img/link-lenovo.png" alt="">
-        </a>
-        <a href="#acer">
-            <img src="img/link-acer.png" alt="">
-        </a>
-        <a href="#other">
-            <img src="img/link-xpg.png" alt="">
-        </a>
-        <a href="#other">
-            <img src="img/link-giga.png" alt="">
-        </a>
-    </div>
-    <div class="line"></div>
-    <!-- <div class="c-content"> -->
+    <div class="c-content">
+        <div class="link" style="padding-bottom: 1%;">
+            <a href="#asus">
+                <img src="img/link-asus.png" alt="">
+            </a>
+            <a href="#msi">
+                <img src="img/link-msi.png" alt="">
+            </a>
+            <a href="#dell">
+                <img src="img/link-dell.png" alt="">
+            </a>
+            <a href="#hp">
+                <img src="img/link-hp.png" alt="">
+            </a>
+            <a href="#lenovo">
+                <img src="img/link-lenovo.png" alt="">
+            </a>
+            <a href="#acer">
+                <img src="img/link-acer.png" alt="">
+            </a>
+            <a href="#other">
+                <img src="img/link-xpg.png" alt="">
+            </a>
+            <a href="#other">
+                <img src="img/link-giga.png" alt="">
+            </a>
+        </div>
+        <div class="line"></div>
         <div class="chinh-sach" style="padding: 1% 40px 1%;">
             <h2><img src="img/chinh-sach.png"></h2>
         </div>
@@ -490,11 +508,12 @@ src="https://www.facebook.com/tr?id=1087712025416221&ev=PageView&noscript=1"
                 </a>
             </div>
         </div>
-        
-    <!-- </div> -->
+    </div>
+    
+
 <div class="clearfix"></div>
 <section class="cpr" style="padding: 0;" >
-    <div style="width:1400px; margin: auto;color: #000; padding: 15px 90px; border-top: 1px solid #ccc;">
+    <div id="description">
         <p>
             WEBSITE ĐƯỢC SỞ HỮU VÀ QUẢN LÝ BỞI NGUYỄN VIẾT CÔNG<br/>
             <b>CÔNG TY TNHH MÁY TÍNH NGUYỄN CÔNG</b><br/>

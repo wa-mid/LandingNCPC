@@ -21,24 +21,25 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="https://nguyencongpc.vn/static/assets/default/script/style.css?5.5" type="text/css" />
     <style type="text/css" media="screen">
-        html {
+        html{
             scroll-behavior: smooth;
         }
-        body {
-            background-image: linear-gradient(#ebeef3, #ebeef3);
+        body{
+            /* background-image: linear-gradient(#ebeef3, #ebeef3); */
+            background-image: url(img/background.jpg);
             background-size: 100% 100%;
             min-width: unset;
         }
-        img {
+        img{
             width:  100%;
         }
 
-        .c-banner {
+        .c-banner{
             width: 100%;
             margin: auto;
             text-align: center;
         }
-        .c-banner a {
+        .c-banner a{
             max-width: 1920px;
             display: block;
             margin: auto;
@@ -51,7 +52,7 @@
             overflow: hidden;
         }
 
-        .laptop a, .link a {
+        .laptop a, .link a{
             width: 32%;
             float: left;
             margin-right: 2%;
@@ -59,16 +60,16 @@
             overflow: visible;
         }
 
-        .link a {
+        .link a{
             width: 24%;
             margin-right: 1%;
         }
 
-        .laptop a:nth-child(3n) {
+        .laptop a:nth-child(3n){
             margin: 0 !important;
         }
         
-        .link a:nth-child(4n) {
+        .link a:nth-child(4n){
             margin: 0 !important;
         }
 
@@ -80,7 +81,7 @@
             border-radius: 7%;
         }
 
-        .link a img, .footer a img {
+        .link a img, .footer a img{
             box-shadow: none;
             border-radius: none;
         }
@@ -91,19 +92,80 @@
             transform: scale(1.1);
         }
 
-        .laptop, .link {
+        .laptop, .link{
             padding: 1% 10% 3% 11%;
         }
-        .line {
+
+        .chinh-sach img{
+            width:72%; 
+            margin-left:14%;
+        }
+
+        .line{
             border-bottom: #bfc1c0 solid 3px ;
         }
 
-        .title img {
+        .title img{
             width: 27%;
         }
-        .title-lg img {
+        .title-lg img{
             width: 80%;
         }
+
+        #view-more{
+            width: 30%;
+            margin: 5% 0 2% 35%;
+        }
+
+        #contact{
+            width: 40%;
+            margin-left: 30%;
+        }
+        @media (max-width:576px){
+            .laptop{
+                padding: 3% 19% 4% 14%;
+            }
+
+            .link{
+                padding: 3% 12% 4% 12%;
+            }
+
+            .laptop a{
+                width: 109%;
+                padding: 3%;
+            }
+
+            .link a{
+                width: 49%;
+                padding: 3%;
+                margin-right: 1%;
+            }
+            .link a:nth-child(2n){
+                margin: 0 !important;
+            }
+
+            .chinh-sach img{
+                width: 100%; 
+                margin-left: 0;
+            }
+
+            .title img{
+                width: 38%;
+            }
+            .title-lg img{
+                width: 100%;
+            }
+
+            #view-more{
+                width: 58%;
+                margin: 5% 0 2% 21%;
+            }
+            #contact {
+                width: 61%;
+                margin-left: 19%;
+            }
+        }	
+
     </style>
     <script type="application/ld+json">
     {
@@ -242,7 +304,7 @@ src="https://www.facebook.com/tr?id=1087712025416221&ev=PageView&noscript=1"
     <div class="line"></div>
     <!-- <div class="c-content"> -->
         <div class="chinh-sach" style="padding: 1% 40px 1%;">
-            <h2><img style="width:72%; margin-left:14%;" src="img/chinh-sach.png"></h2>
+            <h2><img src="img/chinh-sach.png"></h2>
         </div>
         <!-- <section id="asus"></section> -->
         <div id="asus" class="laptop">
@@ -416,12 +478,12 @@ src="https://www.facebook.com/tr?id=1087712025416221&ev=PageView&noscript=1"
             </a>
         </div>
         <div class="footer">
-            <div style="width: 40%; margin: 0 0 2% 30%;">
+            <div id="view-more">
                 <a href="https://nguyencongpc.vn/laptop">
                     <img src="img/view-more.png" alt="">
                 </a>
             </div>
-            <div style="width: 40%; margin-left: 30%;">
+            <div id="contact">
                 <a href="tel:0866666266">
                     <img src="img/contact.png">
                 </a>
@@ -431,7 +493,7 @@ src="https://www.facebook.com/tr?id=1087712025416221&ev=PageView&noscript=1"
     <!-- </div> -->
 <div class="clearfix"></div>
 <section class="cpr" style="padding: 0;" >
-    <div style="width:1400px; margin: auto; background: #ebeef3; color: #000; padding: 15px 90px; border-top: 1px solid #ccc;">
+    <div style="width:1400px; margin: auto;color: #000; padding: 15px 90px; border-top: 1px solid #ccc;">
         <p>
             WEBSITE ĐƯỢC SỞ HỮU VÀ QUẢN LÝ BỞI NGUYỄN VIẾT CÔNG<br/>
             <b>CÔNG TY TNHH MÁY TÍNH NGUYỄN CÔNG</b><br/>

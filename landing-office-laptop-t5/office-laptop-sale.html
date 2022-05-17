@@ -21,6 +21,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="https://nguyencongpc.vn/static/assets/default/script/style.css?5.5" type="text/css" />
     <style type="text/css" media="screen">
+        html {
+            scroll-behavior: smooth;
+        }
         body {
             background-image: linear-gradient(#ebeef3, #ebeef3);
             background-size: 100% 100%;
@@ -42,7 +45,7 @@
         }
 
         .laptop, .link, .chinh-sach, .footer{
-            max-width: 1500px;
+            max-width: 1600px;
             margin: auto;
             padding: 0 40px 40px;
             overflow: hidden;
@@ -239,7 +242,7 @@ src="https://www.facebook.com/tr?id=1087712025416221&ev=PageView&noscript=1"
     <div class="line"></div>
     <!-- <div class="c-content"> -->
         <div class="chinh-sach" style="padding: 1% 40px 1%;">
-            <h2><img style="width:81%; margin-left:10%;" src="img/chinh-sach.png"></h2>
+            <h2><img style="width:72%; margin-left:14%;" src="img/chinh-sach.png"></h2>
         </div>
         <!-- <section id="asus"></section> -->
         <div id="asus" class="laptop">
@@ -476,6 +479,7 @@ $(window).scroll(function () {
   
     if ($(window).scrollTop() > 200) {
         $(".header-mid ").addClass("header-fixed");
+        // $(window).scrollTop() = 0;
     } else {
         $(".header-mid ").removeClass("header-fixed");
     }

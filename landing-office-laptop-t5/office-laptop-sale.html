@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="https://nguyencongpc.vn/static/assets/default/script/style.css?5.5" type="text/css" />
     <style type="text/css" media="screen">
         body {
-            background-image: linear-gradient(#fff, #fff);
+            background-image: linear-gradient(#ebeef3, #ebeef3);
             background-size: 100% 100%;
             min-width: unset;
         }
@@ -41,51 +41,65 @@
             margin: auto;
         }
 
-        .c-content {
-            max-width: 1400px;
-            /* background-image: url();
-            background-repeat: no-repeat; */
-            /* background-attachment: fixed; */
-            background-size: 100% 100%;
+        .laptop, .link, .chinh-sach, .footer{
+            max-width: 1500px;
             margin: auto;
             padding: 0 40px 40px;
             overflow: hidden;
         }
 
-        .c-content a {
-            width: 49%;
+        .laptop a, .link a {
+            width: 32%;
             float: left;
             margin-right: 2%;
             padding: 1.5%;
-            overflow: hidden;
+            overflow: visible;
         }
 
-        .c-content a:nth-child(2n) {
+        .link a {
+            width: 24%;
+            margin-right: 1%;
+        }
+
+        .laptop a:nth-child(3n) {
+            margin: 0 !important;
+        }
+        
+        .link a:nth-child(4n) {
             margin: 0 !important;
         }
 
-        .c-content a img {
+        .laptop a img, .link a img, .footer a img{
             transform-origin: 50% 65%;
             transition: transform 3s, filter 2s ease-in-out;
             filter: brightness(110%);
+            box-shadow: 0px 0px 8px #5c5c5c;
+            border-radius: 7%;
         }
 
-        .c-content a:hover img {
+        .link a img, .footer a img {
+            box-shadow: none;
+            border-radius: none;
+        }
+
+        .laptop a:hover img, .link a:hover img, .footer a:hover img{
             filter: brightness(100%);
             transform: scale(3);
             transform: scale(1.1);
         }
 
-        .menu-cat {
-            top: 15px;
+        .laptop, .link {
+            padding: 1% 10% 3% 11%;
+        }
+        .line {
+            border-bottom: #bfc1c0 solid 3px ;
         }
 
-        .menu-cat .box-menu-home {
-            top: 55px;
+        .title img {
+            width: 27%;
         }
-
-        .header-mid.header-fixed .menu-cat {
-            top: 0px;
+        .title-lg img {
+            width: 80%;
         }
     </style>
     <script type="application/ld+json">
@@ -196,29 +210,225 @@ src="https://www.facebook.com/tr?id=1087712025416221&ev=PageView&noscript=1"
     <div class="c-banner">
         <a href="https://nguyencongpc.vn/" title="Máy Tính Nguyễn Công"><img src="img/banner.jpg" alt="Banner"></a>
     </div>
-    <div class="c-content">
-        <!-- <div>
-            <a style="width: 97%; float: left; padding: 10px 60px 20px 90px; overflow: hidden;" href="https://nguyencongpc.vn/laptop">
-                <img src="https://nguyencongpc.vn/media/lib/15-04-2022/buy-now.png" alt="Laptop">
+    <div class="link" style="padding-bottom: 1%;">
+        <a href="#asus">
+            <img src="img/link-asus.png" alt="">
+        </a>
+        <a href="#msi">
+            <img src="img/link-msi.png" alt="">
+        </a>
+        <a href="#dell">
+            <img src="img/link-dell.png" alt="">
+        </a>
+        <a href="#hp">
+            <img src="img/link-hp.png" alt="">
+        </a>
+        <a href="#lenovo">
+            <img src="img/link-lenovo.png" alt="">
+        </a>
+        <a href="#acer">
+            <img src="img/link-acer.png" alt="">
+        </a>
+        <a href="#other">
+            <img src="img/link-xpg.png" alt="">
+        </a>
+        <a href="#other">
+            <img src="img/link-giga.png" alt="">
+        </a>
+    </div>
+    <div class="line"></div>
+    <!-- <div class="c-content"> -->
+        <div class="chinh-sach" style="padding: 1% 40px 1%;">
+            <h2><img style="width:81%; margin-left:10%;" src="img/chinh-sach.png"></h2>
+        </div>
+        <!-- <section id="asus"></section> -->
+        <div id="asus" class="laptop">
+            <div class="title-lg">
+                <img src="img/title-asus.png" alt="">
+            </div>
+            <div class="product">
+                <a href="">
+                    <img src="img/laptop-asus-vivobook-x515ea-bq1006w.png" alt="">
+                </a>
+                <a href="">
+                    <img src="img/laptop-asus-vivobook-a415ea-eb1750w.png" alt="">
+                </a>
+                <a href="">
+                    <img src="img/laptop-asus-vivobook-x415ea-eb640w.png" alt="">
+                </a>
+                <a href="">
+                    <img src="img/laptop-asus-vivobook-x515ea-ej1046w.png" alt="">
+                </a>
+                <a href="">
+                    <img src="img/laptop-asus-vivobook-a515ea-l12033w.png" alt="">
+                </a>
+                <a href="">
+                    <img src="img/laptop-asus-zenbook-ux325ea-kg656w.png" alt="">
+                </a>
+            </div>
+            
+        </div>
+        <div class="line"></div>
+        <div id="msi" class="laptop">
+            <div class="title-lg">
+                <img src="img/title-msi.png" alt="">
+            </div>
+            <a href="">
+                <img src="img/laptop-msi-modern-14-b11mou-1030vn.png" alt="">
             </a>
-        </div> -->
-        <div style="padding: 0 10% 0 11%;">
-            <h2><img src="img/chinh-sach.png"></h2>
-            <a href="https://nguyencongpc.vn/laptop-asus-tuf-gaming-f15-fx506lh-hn002t-i5-10300h-gtx1650">
-                <img src="https://nguyencongpc.vn/media/lib/03-05-2022/laptop-asus-tuf-gaming-fx506lh-hn002t.png" alt="Laptop Asus TUF Gaming FX506LH-HN002T">
+            <a href="">
+                <img src="img/laptop-msi-modern-14-b5m-204vn.png" alt="">
             </a>
-            
-            
-            
-            <a href="tel:0866666266"style="text-align: center; width: 100%; color: #fff; font-size: 28px; font-weight: bold;">
-                <img src="https://nguyencongpc.vn/media/lib/15-04-2022/contact.png" style="width: 60%;">
+            <a href="">
+                <img src="img/laptop-msi-modern-15-a5m-238vn.png" alt="">
+            </a>
+            <a href="">
+                <img src="img/laptop-msi-modern-14-b11sbu-668vn.png" alt="">
+            </a>
+            <a href="">
+                <img src="img/laptop-msi-modern-15-a5m-239vn.png" alt="">
+            </a>
+            <a href="">
+                <img src="img/laptop-msi-modern-14-b11mou-1033vn.png" alt="">
             </a>
         </div>
+        <div class="line"></div>
+        <div id="dell" class="laptop">
+            <div class="title">
+                <img src="img/title-dell.png" alt="">
+            </div>
+            <a href="">
+                <img src="img/laptop-dell-latitude-3410-70216823.png" alt="">
+            </a>
+            <a href="">
+                <img src="img/laptop-dell-inspiron-3511a.png" alt="">
+            </a>
+            <a href="">
+                <img src="img/laptop-dell-inspiron-15-3511b-p112f001bbl.png" alt="">
+            </a>
+            <a href="">
+                <img src="img/laptop-dell-inspiron-n3501b-p90f005n3501b.png" alt="">
+            </a>
+            <a href="">
+                <img src="img/laptop-dell-latitude-3520-70251594.png" alt="">
+            </a>
+            <a href="">
+                <img src="img/laptop-dell-latitude-3420-l3420i5ssd.png" alt="">
+            </a>
+            <a href="">
+                <img src="img/laptop-dell-inspiron-3511c-p112f001cbl.png" alt="">
+            </a>
+            <a href="">
+                <img src="img/laptop-dell-vostro-v3500c-p90f006cbl.png" alt="">
+            </a>
+            <a href="">
+                <img src="img/laptop-dell-inspiron-15-3511-p112f001ebl.png" alt="">
+            </a>
+        </div>
+        <div class="line"></div>
+        <div id="hp" class="laptop">
+            <div class="title">
+                <img src="img/title-hp.png" alt="">
+            </div>
+            <a href="">
+                <img src="img/laptop-hp-340s-g7-240q4pa.png" alt="">
+            </a>
+            <a href="">
+                <img src="img/laptop-hp-14s-fq1080au-4k0z7pa.png" alt="">
+            </a>
+            <a href="">
+                <img src="img/laptop-hp-pavilion-14-dv0512tu-46l81pa.png" alt="">
+            </a>
+            <a href="">
+                <img src="img/laptop-hp-envy-x360-ay1057au-601q9pa.png" alt="">
+            </a>
+            <a href="">
+                <img src="img/laptop-hp-zbook-firefly-14-g8-1a2f1av.png" alt="">
+            </a>
+            <a href="">
+                <img src="img/laptop-hp-15-dy2052ms.png" alt="">
+            </a>
+        </div>
+        <div class="line"></div>
+        <div id="lenovo" class="laptop">
+            <div class="title">
+                <img src="img/title-lenovo.png" alt="">
+            </div>
+            <a href="">
+                <img src="img/laptop-lenovo-ideapad-3-15itl6.png" alt="">
+            </a>
+            <a href="">
+                <img src="img/laptop-lenovo-thinkbook-15-g3-acl-21a400cfvn.png" alt="">
+            </a>
+            <a href="">
+                <img src="img/laptop-lenovo-thinkpad-e14-gen-2-20ta002lva.png" alt="">
+            </a>
+            <a href="">
+                <img src="img/laptop-lenovo-ideapad-5-pro-16ach6-82l50097vn.png" alt="">
+            </a>
+            <a href="">
+                <img src="img/laptop-lenovo-yoga-slim-7-14itl05-82a3004fvn.png" alt="">
+            </a>
+            <a href="">
+                <img src="img/laptop-lenovo-v15-g2-itl-82kb00qtvn.png" alt="">
+            </a>
+        </div>
+        <div class="line"></div>
+        <div id="acer" class="laptop">
+            <div class="title">
+                <img src="img/title-acer.png" alt="">
+            </div>
+            <a href="">
+                <img src="img/laptop-acer-aspire-3-a315-58-59ly-nx.png" alt="">
+            </a>
+            <a href="">
+                <img src="img/laptop-acer-aspire-a514-54-59qk-nx.png" alt="">
+            </a>
+            <a href="">
+                <img src="img/laptop-acer-swift-3-sf314-43-r4x3-nx.png" alt="">
+            </a>
+            <a href="">
+                <img src="img/laptop-acer-aspire-a315-56-58eg-nx.png" alt="">
+            </a>
+            <a href="">
+                <img src="img/laptop-acer-aspire-a315-57g-573f-nx.png" alt="">
+            </a>
+            <a href="">
+                <img src="img/laptop-acer-swift-x-sfx16-51g-516q-nx.png" alt="">
+            </a>
+        </div>
+        <div class="line"></div>
+        <div id="other" class="laptop">
+            <div class="title">
+                <img src="img/title-other-laptop.png" alt="">
+            </div>
+            <a href="">
+                <img src="img/laptop-gigabyte-u4-ud-50s1823so.png" alt="">
+            </a>
+            <a href="">
+                <img src="img/laptop-xpg-ultrabook-xenia-14.png" alt="">
+            </a>
+            <a href="">
+                <img src="img/laptop-xpg-ultrabook-xenia-14-i7.png" alt="">
+            </a>
+        </div>
+        <div class="footer">
+            <div style="width: 40%; margin: 0 0 2% 30%;">
+                <a href="https://nguyencongpc.vn/laptop">
+                    <img src="img/view-more.png" alt="">
+                </a>
+            </div>
+            <div style="width: 40%; margin-left: 30%;">
+                <a href="tel:0866666266">
+                    <img src="img/contact.png">
+                </a>
+            </div>
+        </div>
         
-    </div>
+    <!-- </div> -->
 <div class="clearfix"></div>
 <section class="cpr" style="padding: 0;" >
-    <div style="width:1400px; margin: auto; background: #04347c; color: #fff; padding: 15px 90px; border-top: 1px solid #ccc;">
+    <div style="width:1400px; margin: auto; background: #ebeef3; color: #000; padding: 15px 90px; border-top: 1px solid #ccc;">
         <p>
             WEBSITE ĐƯỢC SỞ HỮU VÀ QUẢN LÝ BỞI NGUYỄN VIẾT CÔNG<br/>
             <b>CÔNG TY TNHH MÁY TÍNH NGUYỄN CÔNG</b><br/>
